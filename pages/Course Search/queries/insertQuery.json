@@ -73,12 +73,12 @@
         },
         "insert": {
           "documents": {
-            "data": "{\n  \"CourseImage\": {{CourseImage.text}},\n  \"Title\": {{Title.text}},\n  \"Instructor\": {{Instructor.text}},\n  \"Stars\": {{Stars.text}},\n  \"Review\": {{Review.text}},\n  \"Cost\": {{Cost.text}}\n}"
+            "data": "{\n  \"Id\": {{Id_course.text}},\n  \"CourseImage\": {{CourseImage.text}},\n  \"Title\": {{Title.text}},\n  \"Instructor\": {{Instructor.text}},\n  \"Stars\": {{Stars.text}},\n  \"Review\": {{Review.text}},\n  \"Cost\": {{Cost.text}}\n}"
           }
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"insert\": \"By Search\",\n  \"documents\": {\n  \"CourseImage\": {{CourseImage.text}},\n  \"Title\": {{Title.text}},\n  \"Instructor\": {{Instructor.text}},\n  \"Stars\": {{Stars.text}},\n  \"Review\": {{Review.text}},\n  \"Cost\": {{Cost.text}}\n}\n}\n",
+            "data": "{\n  \"insert\": \"By Search\",\n  \"documents\": {\n  \"Id\": {{Id_course.text}},\n  \"CourseImage\": {{CourseImage.text}},\n  \"Title\": {{Title.text}},\n  \"Instructor\": {{Instructor.text}},\n  \"Stars\": {{Stars.text}},\n  \"Review\": {{Review.text}},\n  \"Cost\": {{Cost.text}}\n}\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -110,6 +110,7 @@
     "jsonPathKeys": [
       "Cost.text",
       "CourseImage.text",
+      "Id_course.text",
       "Instructor.text",
       "Review.text",
       "Stars.text",

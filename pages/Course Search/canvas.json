@@ -204,7 +204,7 @@
                       "text": "Course Search Detail",
                       "key": "w5p2882afv",
                       "isDeprecated": false,
-                      "rightColumn": 15,
+                      "rightColumn": 26,
                       "textAlign": "LEFT",
                       "widgetId": "aj0cqsgrxv",
                       "isVisible": true,
@@ -262,6 +262,9 @@
                         },
                         {
                           "key": "boxShadow"
+                        },
+                        {
+                          "key": "primaryColumns.Id.computedValue"
                         }
                       ],
                       "leftColumn": 1,
@@ -300,9 +303,10 @@
                       "defaultPageSize": 0,
                       "columnOrder": [
                         "_id",
+                        "Id",
                         "Title",
-                        "Instructor",
                         "CourseImage",
+                        "Instructor",
                         "Stars",
                         "Review",
                         "Cost",
@@ -334,7 +338,7 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
+                          "isVisible": false,
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
@@ -430,6 +434,25 @@
                           "isDerived": false,
                           "label": "Review",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Review))}}"
+                        },
+                        "Id": {
+                          "index": 5,
+                          "width": 150,
+                          "id": "Id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Id",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Id))}}",
+                          "cellBackground": ""
                         },
                         "CourseImage": {
                           "index": 5,
@@ -876,13 +899,13 @@
                   "widgetName": "Canvas4",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 450,
+                  "bottomRow": 440,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 452,
+                  "minHeight": 446,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [
@@ -896,6 +919,60 @@
                   "children": [
                     {
                       "boxShadow": "none",
+                      "widgetName": "Id_course",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595.svg",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "topRow": 7,
+                      "bottomRow": 11,
+                      "parentRowSpace": 10,
+                      "labelWidth": "12",
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.9375,
+                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "placeholderText": "Id No.",
+                      "isDisabled": false,
+                      "key": "6un863ox2a",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": true,
+                      "isDeprecated": false,
+                      "rightColumn": 62,
+                      "widgetId": "r3vvc8sedr",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "Id",
+                      "version": 2,
+                      "parentId": "d1bbqt0hk6",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "iconAlign": "left",
+                      "defaultText": ""
+                    },
+                    {
+                      "boxShadow": "none",
                       "widgetName": "Cost",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
@@ -905,8 +982,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 32,
-                      "bottomRow": 36,
+                      "topRow": 31,
+                      "bottomRow": 35,
                       "parentRowSpace": 10,
                       "labelWidth": "12",
                       "autoFocus": false,
@@ -1013,8 +1090,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 22,
-                      "bottomRow": 26,
+                      "topRow": 23,
+                      "bottomRow": 27,
                       "parentRowSpace": 10,
                       "labelWidth": "12",
                       "autoFocus": false,
@@ -1067,8 +1144,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 17,
-                      "bottomRow": 21,
+                      "topRow": 19,
+                      "bottomRow": 23,
                       "parentRowSpace": 10,
                       "labelWidth": "12",
                       "autoFocus": false,
@@ -1121,8 +1198,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 12,
-                      "bottomRow": 16,
+                      "topRow": 15,
+                      "bottomRow": 19,
                       "parentRowSpace": 10,
                       "labelWidth": "12",
                       "autoFocus": false,
@@ -1264,7 +1341,7 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 1,
+                      "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1277,7 +1354,7 @@
                       "isDisabled": false,
                       "key": "17ab5coe33",
                       "isDeprecated": false,
-                      "rightColumn": 32,
+                      "rightColumn": 31,
                       "isDefaultClickDisabled": true,
                       "widgetId": "hgsu95vrjc",
                       "buttonStyle": "PRIMARY",
@@ -1317,7 +1394,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 32,
+                      "leftColumn": 31,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1330,7 +1407,7 @@
                       "isDisabled": false,
                       "key": "17ab5coe33",
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 62,
                       "isDefaultClickDisabled": true,
                       "widgetId": "x1sj7tadjh",
                       "buttonStyle": "PRIMARY_BUTTON",
@@ -1355,8 +1432,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 7,
-                      "bottomRow": 11,
+                      "topRow": 11,
+                      "bottomRow": 15,
                       "parentRowSpace": 10,
                       "labelWidth": "12",
                       "autoFocus": false,
@@ -1415,7 +1492,7 @@
                 }
               ],
               "key": "9lhezo8zan",
-              "height": 452,
+              "height": 446,
               "isDeprecated": false,
               "rightColumn": 45,
               "detachFromLayout": true,
