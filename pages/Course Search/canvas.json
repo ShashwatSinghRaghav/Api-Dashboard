@@ -1096,6 +1096,7 @@
                       "labelWidth": "12",
                       "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
+                      "maxNum": "5",
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 6.9375,
