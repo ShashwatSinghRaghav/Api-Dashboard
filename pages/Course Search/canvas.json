@@ -1371,7 +1371,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Button5",
-                      "onClick": "{{ insertQuery.run(() => BySearch_query.run(() => closeModal('Insert_'))}}",
+                      "onClick": "{{ insertQuery.run(() => BySearch_query.run(() => closeModal('Insert_')))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
