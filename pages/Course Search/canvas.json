@@ -1123,6 +1123,7 @@
                       "rightColumn": 62,
                       "widgetId": "fm8v631n3u",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "errorMessage": "Range is from 0-5",
                       "isVisible": true,
                       "label": "Stars",
                       "version": 2,
